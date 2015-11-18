@@ -4,7 +4,7 @@ public class RunnerLinkedList
 	{
 		LinkedList<Integer> list = new LinkedList<Integer>();
 		list.add(0,41);		
-		list.add(1);
+		list.add(1,42134);
 		list.add(2);
 		list.add(3);
 		//list.add(2, 25);

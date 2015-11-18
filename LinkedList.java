@@ -2,7 +2,7 @@
 This is a my LinkedList class. 
 
 @author Kevin Chow
-@version 11.15.15
+@version 11.18.15
 */
 public class LinkedList<E>
 {
@@ -82,22 +82,19 @@ public class LinkedList<E>
 			if (size == 0)
 			{
 				add(toAdd);
-			}
-				
+				return true;
+			}	
 			else
 			{
 				newNode.setNext(head.getNext());
 				head.setNext(newNode);
 				size++;
 				return true;	
-			}
-			
+			}	
 		}
-		
-		if (index == size)
+		if (index == size) //less runtime if you want to add to last spot in the list
 		{
 			add(toAdd);
-			size++;
 			return true;
 		}
 
@@ -158,6 +155,7 @@ public class LinkedList<E>
 
 
 /**
+//
 public int size()
 	{
 		//easy way is returning size()
