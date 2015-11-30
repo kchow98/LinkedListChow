@@ -1,0 +1,36 @@
+
+
+
+
+
+/**
+// other ways to get size of a linked list
+public int size()
+	{
+		//easy way is returning size()
+		//lets do the fun hard way
+		if (head == null)// in case linkedlist has nothing in it, would crash that for loop
+			return 0; 
+			
+		int count = 1;// if it got to this point, at least 1 thing would get there.
+		
+		//how to loop through a LinkedList
+		for(ListNode<E> curr = head; curr.getNext != null; curr = curr.getNext())
+		{
+			count++;
+		}
+		return count;
+	}
+
+public int size()
+	{
+		return size(head)
+	}
+	private int size(ListNode<E> node)
+	{
+		if(node == null)
+			return 0;
+		else
+			return 1 + size(nodegetNext());
+	}
+*/

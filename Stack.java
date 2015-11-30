@@ -1,20 +1,34 @@
 /**
-Stacks
+This is a my Stack interface. LIFO (Last in first out)
 
-LIFO (Last In First Out)
-{
-	Push, Pop, Peak
-	Check to see if its empty 
-}
+@author Kevin Chow
+@version 11.29.15
 */
-
 public interface Stack<E>
 {
-	void push(E item); // adds item to top
-	E pop(); // removes item from top
-	E peek(); //tells what is on top
-	boolean isEmpty(); // returns boolean if it is emptys
+	/**
+	Add object to the top of the stack
+	@param E item that is being added to the stack
+	*/
+	void push(E item);
+	
+	/**
+	Remove top  object from stack
+	@return top item in the stack
+	*/
+	E pop();
+	
+	/**
+	Returns, but does not remove, the top item 
+	@return E top item
+	*/
+	E peek(); 
+	
+	/**
+	Return whether or not the Stack is empty
+	@return boolean whether or not the Stack is empty
+	*/
+	boolean isEmpty(); 
 	
 }
 
-//Stack<Character> calculator = new Linkedlist<Character>(); should be able to compile 
