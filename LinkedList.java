@@ -191,7 +191,7 @@ public class LinkedList<E> implements Iterable<E>, Stack<E>, Queue<E>
 	{
 		if (size == 1) // because the loop below doesn't work if size > 1
 		{
-			if (head.getItem() == obj)
+			if (head.getItem().equals(obj))
 			{
 				head = null;
 				tail = null;
@@ -202,7 +202,7 @@ public class LinkedList<E> implements Iterable<E>, Stack<E>, Queue<E>
 		for(ListNode<E> curr = head; curr!= null; curr = curr.getNext())
 		{
 			ListNode<E> nextNode = curr.getNext(); 
-			if (nextNode.getItem() == obj)
+			if (nextNode.getItem().equals(obj))
 			{
 				if (tail == nextNode)//because if is last node, will need to reset tail
 				{
@@ -299,7 +299,7 @@ public class LinkedList<E> implements Iterable<E>, Stack<E>, Queue<E>
 		int counter = 0;
 		for(ListNode<E> curr = head; curr!= null; curr = curr.getNext())
 		{
-			if(curr.getItem() == obj)
+			if(curr.getItem().equals(obj))
 			{
 				indexOfObj = counter;
 				return indexOfObj;

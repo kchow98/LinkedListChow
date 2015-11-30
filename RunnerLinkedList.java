@@ -10,15 +10,16 @@ public class RunnerLinkedList
 	{
 		ListNode<String> node = new ListNode<String>("0");	
 		LinkedList<String> list = new LinkedList<String>(node);
-		list.add(1,"1");
-		list.add("2");
-		list.add(3,"3");
-		list.add("4");
+		
+		
 		System.out.println(list);
 		System.out.println(list.size());
 		
-		LinkedList<String> list2 = new LinkedList<String>(list);
-		System.out.println(list2);
+		System.out.println(list.remove("0"));
+	
+		System.out.println(list);
+		System.out.println(list.size());
+	
 
 		
 				
